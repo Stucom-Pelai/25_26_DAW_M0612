@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exercici01.js" defer></script>
+</head>
+
+<body>
+
+    <div id="llista_propietats">
+
+    </div>
+    <label> Volum:
+        <input type="range" id="inp_vol_audio" 
+        step="0.1" min="0" max="1"
+        value="1">
+    </label>
+    <label> Current Time
+        <input type="range" 
+                id="inp_time"
+        step="0.1" min="0" max="0">
+
+    </label>
+    <br>
+    <button id="btn_play"> PLAY</button>
+    <button id="btn_stop">STOP</button>
+    <button id="btn_pause">PAUSE</button>
+    <button id="btn_mute">MUTE</button>
+    <button id="btn_vol_up">+</button>
+    <button id="btn_vol_down">-</button>
+    <br>
+    <select id="select_music" multiple>
+        <option value="DRUMC0.WAV" selected>DRUMC0</option>
+        <option value="FANFARE1.WAV">FANFARE1</option>
+    </select>
+</body>
+
+</html>
