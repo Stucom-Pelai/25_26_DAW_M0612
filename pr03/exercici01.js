@@ -76,3 +76,16 @@ console.log(llista_numeros.titol);
 
 
 //TODO VEURE SPLICE
+llista_numeros= new Array(10);
+for(let k=0;k<llista_numeros.length;k++){
+    llista_numeros[k]=k;
+}
+llista_numeros.splice(2,3)
+console.log(llista_numeros);
+llista_numeros.splice(llista_numeros.length,0,"hi","world")
+console.log(llista_numeros)
+// llista_numeros.splice(2,10)
+llista_numeros.length=2;
+console.log(llista_numeros)
+
+
