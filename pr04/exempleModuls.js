@@ -1,4 +1,4 @@
-function saluda(){
+window.saluda=function(){
     console.log("Hola món des d'un mòdul!");
 }
 
