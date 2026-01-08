@@ -25,6 +25,7 @@ objecte3.mostraLema();
 
 class Ordinador{
     set marca(marca){
+        
         this._marca = marca+"*";
     }
     get marca(){
@@ -44,5 +45,9 @@ class Ordinador{
     }
 }
 let ordi1= new Ordinador("Asus","Intelligent",780);
+console.log(ordi1.preu)
+console.log(ordi1.cpu)
+console.log(ordi1.marca)
+
 console.log( ordi1.informacio);
 
