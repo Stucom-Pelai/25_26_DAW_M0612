@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exemple_mapsForms.js" defer></script>
+    <style>
+        #formulari {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #formulari>input {
+            width: 300px;
+        }
+
+        input:valid {
+            background-color: rgba(0, 121, 0, 0.356)
+        }
+
+        input:invalid {
+            background-color: rgba(255, 0, 0, 0.349);
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn_creaInput"> CREA INPUT</button>
+    <div id="formulari">
+
+        <form name="form_ex" novalidate>
+            <input type="text" name="nick" pattern="[A-z]{2,4}" required><span></span>
+            <select name="enviar">
+                <option value="no">No enviar</option>
+                <option value="si">enviar</option>
+            </select>
+            <span></span>
+            <input type="submit"><span></span>
+        </form>
+
+
+
+
+
+    </div>
+    Nom: <input type="text" id="nomInput">
+    <br />
+    <button id="bnt_valida"> VALIDAT</button>
+    <span></span>
+</body>
+
+</html>
