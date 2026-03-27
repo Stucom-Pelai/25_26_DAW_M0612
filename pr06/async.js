@@ -23,9 +23,9 @@ function comprovaNumeroMajor6(aleatori) {
     } else { console.log(aleatori + " no és>6"); }
 }
 // let aleatori = generaAleatori();
-generaAleatori(comprovaNumeroIgual5);
-generaAleatori(comprovaNumeroMajor6);
-generaAleatori(comprovaNumeroIgual5);
+// generaAleatori(comprovaNumeroIgual5);
+// generaAleatori(comprovaNumeroMajor6);
+// generaAleatori(comprovaNumeroIgual5);
 
 
 
