@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="AlarmaMain.js" defer></script>
+    <style>
+        .error{
+            color: red;
+        }
+        .ok{
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="form_alarma" novalidate>
+        titol: <input type="text" id="input_titol" name="input_titol" required minlength="3"><span></span> <br />
+        hora: <input type="number" id="input_hora" name="input_hora"> <br />
+        minut: <input type="number" id="input_minut" name="input_minut"> <br />
+        segon: <input type="number" id="input_segon" name="input_segon"> <br />
+        <!-- musica: <input type="text" id="input_musica"> <br /> -->
+        musica: <select type="text" id="input_musica" name="input_musica">
+            <option value="DRUMC0.WAV"> DRUMC0</option>
+            <option value="FANFARE1.WAV">FANFARE1</option>
+        </select>
+        activa: <input type="checkbox" id="input_activa" name="input_activa"><br />
+        <button id="btn_crea_alarma">CREA ALARMA</button>
+    </form>
+    <div id="div_llista_alarmes"></div>
+</body>
+
+</html>
