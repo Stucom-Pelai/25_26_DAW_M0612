@@ -1,9 +1,10 @@
 let usuaris = new Map();
+
 usuaris.set("43526252W", { "nom": "Joan", "edat": "25" });
 usuaris.set("43526253W", { "nom": "Maria", "edat": "30" });
 usuaris.set("43526254W", { "nom": "Pere", "edat": "28" });
 usuaris.set("nom", "taula usuaris")
-usuaris.set("items", 99)
+usuaris.set("items", 99)        
 
 console.log(usuaris.get("43526252W").nom)
 console.log(usuaris.get("43526252W").edat)
@@ -21,6 +22,7 @@ for (let usuari of usuaris.values()) {
 
 console.log("-------")
 usuaris.delete("43526252W")
+
 console.log(usuaris.has("43526252W"));
 console.log(usuaris.has("43526254W"));
 console.log("---- For of entries---")
@@ -30,8 +32,10 @@ for (let dni_usuari of usuaris.entries()) {
 }
 
 
+
 document.getElementById("bnt_valida").onclick = clk_validaNomInput;
 
+   
 document.getElementById("btn_creaInput").onclick = function () {
     let nouInput = document.createElement("INPUT");
     nouInput.className = "nou_input";
@@ -78,6 +82,7 @@ let form_ex = document.forms["form_ex"];
 form_ex["nick"].addEventListener("input", valida_nickForm)
 form_ex.addEventListener("submit", valida_formulari);
 function valida_formulari(evt) {
+    
     let formOk = true;
     valida_nickForm() ? formOk : formOk = false;
     valida_enviarForm() ? formOk : formOk = false;
@@ -98,14 +103,13 @@ function valida_nickForm() {
     } else {
         form_ex["nick"].nextElementSibling.innerText = "";
     }
-    returntrue;
+    return true;
 }
 function valida_enviarForm() {
     form_ex["enviar"].setCustomValidity('');
     if (form_ex["enviar"].value == "no") {
         form_ex["enviar"].nextElementSibling.innerText = "Form no enviat";
         form_ex["enviar"].setCustomValidity('Selecciona "enviar" per enviar el form');
-        form_ex["enviar"].validity.valid = false; //indiquem que no és valid
         form_ex["enviar"].reportValidity();
         return false;
     }
