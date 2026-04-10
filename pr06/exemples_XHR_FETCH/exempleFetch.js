@@ -2,6 +2,7 @@ const but_enviarFetch_GET = document.getElementById("enviarXHR");
 const but_enviarFetch_POST = document.getElementById("enviarXHR_POST");
 const div_resposta = document.getElementById("resposta");
 const inp_nom = document.getElementById("inp_nom");
+
 but_enviarFetch_GET.addEventListener("click", () => {
    const nom = inp_nom.value;
    const promiseFetch = fetch("exempleXHR_GET.php?n=" + nom,
